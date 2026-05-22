@@ -7,29 +7,9 @@ const IMAGES_DIR = path.join(__dirname, 'images');
 
 const preciseDownloads = [
   {
-    id: 'haribo',
-    url: 'http://shop.daumcdn.net/shophow/p/N35401927012.jpg?ut=20251226113010',
-    filename: 'haribo.jpg'
-  },
-  {
-    id: 'ace',
-    url: 'https://shop-phinf.pstatic.net/20260415_191/1776239763697s0XLP_JPEG/110372697847492552_1358914840.jpg?type=o1000',
-    filename: 'ace.jpg'
-  },
-  {
-    id: 'squidpeanut',
-    url: 'https://thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/d88e/17c7292f48dedf50f4ccc380bf528c858c558e6fad6a78a5c682bee5debb.jpg',
-    filename: 'squidpeanut.jpg'
-  },
-  {
-    id: 'mygumi_peach',
-    url: 'https://postfiles.pstatic.net/MjAxNzExMjVfMjY2/MDAxNTExNTk2MDY0OTU4.I0YxmYyN8NXok4Bf_e4WCUaijrpfPXydZd3qZYJFphEg.f7Y2uyfWPYUSiFWNP95wzSf-hX4feF8zGGomqAhhAZkg.JPEG.bqudcks/%EB%A7%88%EC%9D%B4%EA%B5%AC%EB%AF%B8%EB%B3%B5%EC%88%AD%EC%95%84_PB250739.JPG?type=w966',
-    filename: 'mygumi_peach.jpg'
-  },
-  {
-    id: 'vegtime',
-    url: 'http://shop.daumcdn.net/shophow/p/E5270592985.jpg?ut=20260402180326',
-    filename: 'vegtime.jpg'
+    id: 'swingchip_chicken',
+    url: 'https://cdn.thinkfood.co.kr/news/photo/201604/68552_82450_924.jpg',
+    filename: 'swingchip_chicken_new.png'
   }
 ];
 
