@@ -8,19 +8,34 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function initStats() {
     const saved = localStorage.getItem(STORAGE_KEY);
+    let needsReset = false;
     if (saved) {
       clickStats = JSON.parse(saved);
+      // Check if any vote is > 350, which means we need to scale down/reset to new defaultVotes
+      const values = Object.values(clickStats);
+      if (values.some(v => v > 350)) {
+        needsReset = true;
+      }
+    }
+    
+    if (!saved || needsReset) {
+      clickStats = {};
+      SNACK_DATA.forEach(snack => {
+        clickStats[snack.id] = snack.defaultVotes;
+      });
+      saveStats();
+      // Clear old user votes if resetting
+      if (needsReset) {
+        userVotes = {};
+        localStorage.removeItem(USER_VOTES_KEY);
+      }
+    } else {
       // Fill in new snacks if added later
       SNACK_DATA.forEach(snack => {
         if (clickStats[snack.id] === undefined) {
           clickStats[snack.id] = snack.defaultVotes;
         }
       });
-    } else {
-      SNACK_DATA.forEach(snack => {
-        clickStats[snack.id] = snack.defaultVotes;
-      });
-      saveStats();
     }
     
     // Init user personal votes limit tracking
@@ -34,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(clickStats));
   }
 
-  function showToast(message, iconClass = 'fa-solid fa-fire') {
+  function showToast(message, iconClass = 'fa-solid fa-square-check') {
     const container = document.getElementById('toast-container');
     if (!container) return;
     
@@ -52,14 +67,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const snack = SNACK_DATA.find(s => s.id === snackId);
     if (!snack) return;
     
-    if (!userVotes[snackId]) userVotes[snackId] = 0;
+    const isAlreadyVoted = userVotes[snackId] && userVotes[snackId] > 0;
     
-    if (userVotes[snackId] >= 2) {
-      showToast(`"${snack.name}" 과자는 이미 2번 투표하셨습니다! 🍪`, 'fa-solid fa-circle-info');
+    if (isAlreadyVoted) {
+      showToast(`"${snack.name}" 과자는 이미 체크하셨습니다! 최저가 확인 페이지로 이동합니다. 🍪`, 'fa-solid fa-circle-info');
+      // Immediately open link
+      setTimeout(() => {
+        window.open(snack.link, '_blank');
+      }, 500);
       return;
     }
     
-    userVotes[snackId] += 1;
+    userVotes[snackId] = 1;
     clickStats[snackId] = (clickStats[snackId] || 0) + 1;
     
     localStorage.setItem(USER_VOTES_KEY, JSON.stringify(userVotes));
@@ -73,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.vibrate(40);
     }
     
-    // We will highlight the clicked element with flame-active class in the updated DOM
+    // Highlight the clicked element
     setTimeout(() => {
       const updatedElements = document.querySelectorAll(`[data-id="${snackId}"] .card-votes, [data-id="${snackId}"] .podium-votes, [data-id="${snackId}"] .rank-row-votes`);
       updatedElements.forEach(el => {
@@ -82,12 +101,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, 50);
     
-    showToast(`"${snack.name}" +1표! (현재 ${userVotes[snackId]}/2회) 🔥`);
+    showToast(`"${snack.name}" 체크 완료! 최저가 확인 페이지로 이동합니다. 🔥`);
+    
+    // Open Coupang link in a new tab
+    setTimeout(() => {
+      window.open(snack.link, '_blank');
+    }, 800);
   }
 
   function registerClick(snackId) {
-    if (clickStats[snackId] !== undefined) {
-      clickStats[snackId] += 1;
+    // In details modal click, we can register it as check/vote too if not voted yet
+    if (!userVotes[snackId]) {
+      userVotes[snackId] = 1;
+      clickStats[snackId] = (clickStats[snackId] || 0) + 1;
+      localStorage.setItem(USER_VOTES_KEY, JSON.stringify(userVotes));
       saveStats();
       updateRankingUI();
       renderSnackGrid();
@@ -154,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!snack) return '';
       const votes = clickStats[snack.id];
       const hasImage = snack.image && !snack.image.includes('placeholder');
+      const isVoted = userVotes[snack.id] && userVotes[snack.id] > 0;
       
       const imageHTML = hasImage 
         ? `<img src="${snack.image}" alt="${snack.name}" class="podium-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">`
@@ -171,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${fallbackHTML}
           </div>
           <h3 class="podium-name">${snack.name}</h3>
-          <span class="podium-votes"><i class="fa-solid fa-fire"></i> ${votes.toLocaleString()}</span>
+          <span class="podium-votes ${isVoted ? 'voted' : ''}"><i class="${isVoted ? 'fa-solid fa-square-check' : 'fa-regular fa-square'}"></i> ${votes.toLocaleString()}</span>
         </div>
       `;
     };
@@ -189,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rankNum = i + 1;
       const votes = clickStats[snack.id];
       const hasImage = snack.image && !snack.image.includes('placeholder');
+      const isVoted = userVotes[snack.id] && userVotes[snack.id] > 0;
       
       const imageHTML = hasImage
         ? `<img src="${snack.image}" alt="${snack.name}" class="rank-row-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">`
@@ -204,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="rank-row-info">
             <span class="rank-row-name">${snack.name}</span>
-            <span class="rank-row-votes"><i class="fa-solid fa-fire"></i> ${votes.toLocaleString()}</span>
+            <span class="rank-row-votes ${isVoted ? 'voted' : ''}"><i class="${isVoted ? 'fa-solid fa-square-check' : 'fa-regular fa-square'}"></i> ${votes.toLocaleString()}</span>
           </div>
         </div>
       `;
@@ -257,6 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
     filtered.forEach(snack => {
       const votes = clickStats[snack.id] || 0;
       const hasImage = snack.image && !snack.image.includes('placeholder');
+      const isVoted = userVotes[snack.id] && userVotes[snack.id] > 0;
       
       const imageHTML = hasImage
         ? `<img src="${snack.image}" alt="${snack.name}" class="card-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">`
@@ -278,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3 class="card-title">${snack.name}</h3>
             <p class="card-desc">${snack.desc}</p>
             <div class="card-footer">
-              <span class="card-votes"><i class="fa-solid fa-fire"></i> ${votes.toLocaleString()}</span>
+              <span class="card-votes ${isVoted ? 'voted' : ''}"><i class="${isVoted ? 'fa-solid fa-square-check' : 'fa-regular fa-square'}"></i> ${votes.toLocaleString()}</span>
               <button class="card-btn-buy">
                 상세보기 <i class="fa-solid fa-chevron-right"></i>
               </button>
@@ -584,6 +614,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- 5. Request Snack Modal & Formspree Integration ---
   const floatingReqBtn = document.getElementById('floating-req-btn');
+  const searchRequestBtn = document.getElementById('search-request-btn');
   const requestModal = document.getElementById('request-modal');
   const requestModalCloseBtn = document.getElementById('request-modal-close-btn');
   const snackRequestForm = document.getElementById('snack-request-form');
@@ -591,11 +622,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Formspree Form ID (사용자가 본인의 ID로 교체 가능)
   const FORMSPREE_FORM_ID = 'YOUR_FORMSPREE_ID_HERE'; 
 
-  if (floatingReqBtn && requestModal && requestModalCloseBtn) {
-    floatingReqBtn.addEventListener('click', () => {
-      requestModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
+  if (requestModal && requestModalCloseBtn) {
+    if (floatingReqBtn) {
+      floatingReqBtn.addEventListener('click', () => {
+        requestModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (searchRequestBtn) {
+      searchRequestBtn.addEventListener('click', () => {
+        const reqNameInput = document.getElementById('req-snack-name');
+        if (reqNameInput && searchQuery) {
+          reqNameInput.value = searchQuery;
+        }
+        requestModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
 
     const closeRequestModal = () => {
       requestModal.classList.remove('active');
