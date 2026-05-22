@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>오늘의 최애 스낵 - 과자 추천 룰렛 & 실시간 인기 순위</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="오늘 어떤 과자를 먹을지 고민되시나요? 재미있는 룰렛을 돌려 오늘 최고의 스낵을 추천받고, 실시간 인기 순위 TOP 12도 확인해보세요!">
+  <meta property="og:title" content="오늘의 최애 스낵 - 과자 추천 룰렛 & 실시간 인기 순위">
+  <meta property="og:description" content="재미있는 룰렛으로 스낵을 추천받고 실시간 최저가 혜택까지!">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Glowing Orbs -->
+  <div class="glowing-orb orb-1"></div>
+  <div class="glowing-orb orb-2"></div>
+  <div class="glowing-orb orb-3"></div>
+
+  <header class="app-header">
+    <div class="container">
+      <div class="header-logo">
+        <i class="fa-solid fa-cookie-bite logo-icon"></i>
+        <h1>SNACK PICKER</h1>
+      </div>
+      <p class="header-subtitle">오늘의 최애 스낵 월드컵 & 추천 룰렛 🍿</p>
+    </div>
+  </header>
+
+  <main class="main-content container">
+
+    <!-- 1. Roulette Game Section -->
+    <section class="roulette-section glass-panel" id="roulette-section">
+      <div class="section-badge"><i class="fa-solid fa-dice"></i> 재미로 보는 추천</div>
+      <h2 class="section-title">오늘의 과자 추천 룰렛</h2>
+      <p class="section-desc">무슨 과자를 먹을지 결정 장애가 올 땐 룰렛을 돌려보세요!</p>
+      
+      <div class="roulette-container">
+        <div class="roulette-wheel-wrapper">
+          <div class="roulette-pointer"></div>
+          <div class="roulette-wheel" id="roulette-wheel">
+            <!-- Dynamic segments will be inserted here -->
+            <div class="wheel-center">
+              <span class="center-text">CLICK</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="roulette-controls">
+          <button class="btn btn-primary btn-lg" id="btn-spin">
+            <i class="fa-solid fa-rotate-right"></i> 룰렛 돌리기
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Real-Time Ranking Dashboard (Top 12) -->
+    <section class="ranking-section" id="ranking-section">
+      <div class="section-header-row">
+        <div>
+          <div class="section-badge badge-hot"><i class="fa-solid fa-fire"></i> 실시간 인기</div>
+          <h2 class="section-title">인기 스낵 TOP 12</h2>
+        </div>
+        <div class="ranking-timer">
+          <i class="fa-solid fa-clock-rotate-left"></i> 실시간 반영 중
+        </div>
+      </div>
+      
+      <!-- Top 3 Podium (Visual Highlights) -->
+      <div class="podium-container" id="podium-container">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Rank 4-12 List -->
+      <div class="ranking-grid glass-panel" id="ranking-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- 3. All Snacks Grid with Search and Filter -->
+    <section class="catalog-section" id="catalog-section">
+      <div class="catalog-header">
+        <div>
+          <h2 class="section-title">스낵 보관함</h2>
+          <p class="section-desc">원하는 과자를 찾아 최저가로 득템하세요!</p>
+        </div>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="filter-bar glass-panel">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="search-input" placeholder="어떤 과자를 찾으시나요? (예: 새우깡)">
+          <button class="clear-btn" id="search-clear-btn" style="display: none;">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+        
+        <div class="category-tabs" id="category-tabs">
+          <button class="tab-btn active" data-category="all">전체</button>
+          <button class="tab-btn" data-category="snack">바삭스낵</button>
+          <button class="tab-btn" data-category="potato">감자칩</button>
+          <button class="tab-btn" data-category="choco">초코/파이</button>
+          <button class="tab-btn" data-category="biscuit">쿠키/비스킷</button>
+          <button class="tab-btn" data-category="jelly">젤리/기타</button>
+        </div>
+      </div>
+
+      <!-- Snack Grid -->
+      <div class="snack-grid" id="snack-grid">
+        <!-- Dynamic snack cards will be inserted here -->
+      </div>
+      
+      <!-- No Results State -->
+      <div class="no-results" id="no-results" style="display: none;">
+        <i class="fa-regular fa-face-frown-open"></i>
+        <h3>검색 결과가 없습니다</h3>
+        <p>다른 과자 이름을 입력해 보세요.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. Footer with Legal Disclaimer -->
+  <footer class="app-footer">
+    <div class="container">
+      <p class="disclaimer">
+        <i class="fa-solid fa-circle-info"></i> 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+      </p>
+      <p class="copyright">&copy; 2026 SNACK PICKER. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 5. Interactive Details & Redirect Modal -->
+  <div class="modal-overlay" id="snack-modal">
+    <div class="modal-content glass-panel animate-zoom">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <div class="modal-snack-badge" id="modal-badge">HOT</div>
+          <img src="" alt="" id="modal-img" class="modal-img">
+          <!-- Fallback styled box -->
+          <div id="modal-img-fallback" class="modal-img-fallback" style="display: none;">
+            <i class="fa-solid fa-cookie"></i>
+          </div>
+        </div>
+        
+        <div class="modal-info">
+          <div class="modal-category" id="modal-category">SNACK</div>
+          <h3 class="modal-title" id="modal-title">과자 이름</h3>
+          <p class="modal-desc" id="modal-desc">과자 설명이 들어갈 자리입니다.</p>
+          
+          <div class="modal-stats">
+            <span class="stat-item"><i class="fa-solid fa-heart text-danger animate-pulse"></i> 실시간 투표수: <strong id="modal-votes">0</strong>개</span>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-lg" id="modal-btn-buy">
+              <i class="fa-solid fa-cart-shopping"></i> 쿠팡 최저가 확인 & 구매
+            </a>
+            <p class="modal-disclaimer">※ 위 버튼 클릭 시 쿠팡 파트너스 제휴 페이지로 이동합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container for Notifications -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Floating Request Button -->
+  <button class="floating-req-btn" id="floating-req-btn">
+    <i class="fa-solid fa-cookie-bite"></i>
+    <span>과자 신청</span>
+  </button>
+
+  <!-- 6. Request Snack Modal -->
+  <div class="modal-overlay" id="request-modal">
+    <div class="modal-content glass-panel animate-zoom">
+      <button class="modal-close" id="request-modal-close-btn">&times;</button>
+      
+      <div class="modal-body">
+        <div class="modal-info" style="padding: 30px;">
+          <div class="modal-category" style="color: var(--accent-pink);"><i class="fa-regular fa-paper-plane"></i> 피드백 창구</div>
+          <h3 class="modal-title">원하는 과자 추가 신청</h3>
+          <p class="modal-desc">"내가 좋아하는 과자가 목록에 없나요?" 여기에 신청해 주시면 빠르게 추가해 드릴게요! 🍿</p>
+          
+          <form id="snack-request-form" class="request-form">
+            <div class="form-group">
+              <label for="req-snack-name">과자 이름 <span class="text-danger">*</span></label>
+              <input type="text" id="req-snack-name" name="snack_name" placeholder="예: 꼬북칩 초코츄러스맛, 포카칩 어니언맛" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="req-snack-reason">추천하는 이유 (선택)</label>
+              <textarea id="req-snack-reason" name="reason" placeholder="이 과자의 매력을 어필해 주세요!" rows="3"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="req-user-email">답변받을 이메일 주소 (선택)</label>
+              <input type="email" id="req-user-email" name="user_email" placeholder="예: user@example.com">
+            </div>
+
+            <div class="modal-actions" style="margin-top: 15px;">
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-request">
+                <i class="fa-solid fa-paper-plane"></i> 신청서 제출하기
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
