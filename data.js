@@ -595,7 +595,7 @@ const SNACK_DATA = [
   },
   {
     "id": "chocochip_cookie",
-    "name": "초코칩 쿠키 바삭",
+    "name": "초코칩 쿠키",
     "category": "biscuit",
     "image": "images/chocochip_cookie_new.png",
     "link": "https://link.coupang.com/a/example56",
