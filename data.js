@@ -336,7 +336,7 @@ const SNACK_DATA = [
     "id": "shrimpchip",
     "name": "알새우칩",
     "category": "snack",
-    "image": "images/default_snack.png",
+    "image": "images/shrimpchip_new.png",
     "link": "https://link.coupang.com/a/example29",
     "desc": "입안 가득 차오르는 파삭함, 생새우 향이 입안에 퍼져 안주나 간식으로 최고!",
     "defaultVotes": 945
