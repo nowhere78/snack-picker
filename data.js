@@ -4,7 +4,7 @@ const SNACK_DATA = [
     "name": "새우깡",
     "category": "snack",
     "image": "images/saewookkang.png",
-    "link": "https://link.coupang.com/a/example1",
+    "link": "https://link.coupang.com/a/dyI4qVhgpo",
     "desc": "손이 가요 손이 가~ 고소하고 짭조름한 한국인의 소울 원조 스낵!",
     "defaultVotes": 300
   },
