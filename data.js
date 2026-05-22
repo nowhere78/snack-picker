@@ -246,16 +246,16 @@ const SNACK_DATA = [
     "id": "pocachip_onion",
     "name": "포카칩 어니언맛",
     "category": "potato",
-    "image": "images/default_potato.png",
+    "image": "images/pocachip_onion.png",
     "link": "https://link.coupang.com/a/example34",
     "desc": "생감자의 신선한 맛 속에 은은하게 감도는 양파 향의 질리지 않는 감자칩!",
     "defaultVotes": 1095
   },
   {
     "id": "pringles_onion",
-    "name": "프링글스 사워크림 어니언",
+    "name": "프링글스 사워크림 앤 어니언",
     "category": "potato",
-    "image": "images/pringles_onion.jpg",
+    "image": "images/pringles_sourcream.png",
     "link": "https://link.coupang.com/a/example42",
     "desc": "새콤한 사워크림과 달콤 짭짤한 어니언 시즈닝이 칩마다 가득 밴 인기 맛!",
     "defaultVotes": 1080
