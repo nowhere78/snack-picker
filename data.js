@@ -327,7 +327,7 @@ const SNACK_DATA = [
     "id": "chocosongi",
     "name": "초코송이",
     "category": "choco",
-    "image": "images/chocosongi.jpg",
+    "image": "images/chocosongi_new.png",
     "link": "https://link.coupang.com/a/example64",
     "desc": "귀여운 머쉬룸 모양 비스킷 머리에 달콤한 밀크 초콜릿 모자를 얹은 과자!",
     "defaultVotes": 960
