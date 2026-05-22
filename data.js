@@ -271,9 +271,9 @@ const SNACK_DATA = [
   },
   {
     "id": "cheetos",
-    "name": "치토스 매콤한맛",
+    "name": "치토스 매콤한 맛",
     "category": "snack",
-    "image": "images/cheetos.jpg",
+    "image": "images/cheetos_spicy.png",
     "link": "https://link.coupang.com/a/example58",
     "desc": "매콤하고 자극적인 양념과 크런치한 옥수수 식감으로 언제나 손이 가는 스낵!",
     "defaultVotes": 1050
