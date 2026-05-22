@@ -262,9 +262,9 @@ const SNACK_DATA = [
   },
   {
     "id": "swingchip",
-    "name": "스윙칩 볶음고추장",
+    "name": "오리온 스윙칩 볶음고추장맛",
     "category": "potato",
-    "image": "images/swingchip.jpg",
+    "image": "images/swingchip_hot.png",
     "link": "https://link.coupang.com/a/example19",
     "desc": "두껍고 큼직한 굴곡 감자칩 사이에 한국인 취향 저격 매콤한 고추장 시즈닝!",
     "defaultVotes": 1065
