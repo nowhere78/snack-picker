@@ -280,9 +280,9 @@ const SNACK_DATA = [
   },
   {
     "id": "nunegamja",
-    "name": "눈을감자",
+    "name": "눈을 감자",
     "category": "potato",
-    "image": "images/nunegamja.jpg",
+    "image": "images/nunegamja_new.png",
     "link": "https://link.coupang.com/a/example53",
     "desc": "통감자를 거칠게 썰어 오독오독하고 짭조름하게 씹는 재미를 살린 감자과자!",
     "defaultVotes": 1035
