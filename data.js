@@ -343,7 +343,7 @@ const SNACK_DATA = [
   },
   {
     "id": "conchi",
-    "name": "콘치 크림 치즈",
+    "name": "콘치 크림치즈",
     "category": "biscuit",
     "image": "images/conchi_new.png",
     "link": "https://link.coupang.com/a/example46",
