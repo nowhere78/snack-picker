@@ -291,7 +291,7 @@ const SNACK_DATA = [
     "id": "sunchip",
     "name": "태양의 맛 썬",
     "category": "snack",
-    "image": "images/sunchip.jpg",
+    "image": "images/sunchip_new.png",
     "link": "https://link.coupang.com/a/example43",
     "desc": "통곡물의 거친 바삭함 속에 배어 나오는 화끈하고 매콤달콤한 태양의 맛!",
     "defaultVotes": 1020
