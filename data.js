@@ -3,7 +3,7 @@ const SNACK_DATA = [
     "id": "saewookkang",
     "name": "새우깡",
     "category": "snack",
-    "image": "images/saewookkang.jpg",
+    "image": "images/saewookkang.png",
     "link": "https://link.coupang.com/a/example1",
     "desc": "손이 가요 손이 가~ 고소하고 짭조름한 한국인의 소울 원조 스낵!",
     "defaultVotes": 300
