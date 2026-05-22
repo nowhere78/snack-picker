@@ -318,7 +318,7 @@ const SNACK_DATA = [
     "id": "margaret",
     "name": "마가렛트",
     "category": "biscuit",
-    "image": "images/margaret.jpg",
+    "image": "images/margaret_new.png",
     "link": "https://link.coupang.com/a/example15",
     "desc": "부드럽고 촉촉한 쿠키 빵 속에 땅콩 크림이 고소하게 채워진 소프트 쿠키!",
     "defaultVotes": 975
