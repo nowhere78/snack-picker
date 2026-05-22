@@ -597,7 +597,7 @@ const SNACK_DATA = [
     "id": "chocochip_cookie",
     "name": "초코칩 쿠키",
     "category": "biscuit",
-    "image": "images/chocochip_cookie_new.png",
+    "image": "images/chocochip_cookie_original.png",
     "link": "https://link.coupang.com/a/example56",
     "desc": "고소한 쿠키 반죽 속에 초코칩이 아기자기하게 들어있어 깔끔하게 조화를 이루는 비스킷!",
     "defaultVotes": 119
