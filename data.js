@@ -381,7 +381,7 @@ const SNACK_DATA = [
     "id": "couque",
     "name": "쿠쿠다스 화이트",
     "category": "biscuit",
-    "image": "images/default_biscuit.png",
+    "image": "images/couque_new.png",
     "link": "https://link.coupang.com/a/example16",
     "desc": "입에 대자마자 눈처럼 녹아내리는 부드러움의 정수! 멜랑슈 크림 쿠키.",
     "defaultVotes": 870
