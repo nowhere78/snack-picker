@@ -343,9 +343,9 @@ const SNACK_DATA = [
   },
   {
     "id": "conchi",
-    "name": "콘치 크림치즈",
+    "name": "콘치 크림 치즈",
     "category": "biscuit",
-    "image": "images/default_biscuit.png",
+    "image": "images/conchi_new.png",
     "link": "https://link.coupang.com/a/example46",
     "desc": "바삭한 옥수수 콘 칩 위에 부드럽고 짭조름한 덴마크산 고소한 크림치즈 퐁듀!",
     "defaultVotes": 930
