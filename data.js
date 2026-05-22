@@ -363,7 +363,7 @@ const SNACK_DATA = [
     "id": "yegam_plain",
     "name": "예감 오리지널",
     "category": "potato",
-    "image": "images/yegam_plain.jpg",
+    "image": "images/yegam_plain_new.png",
     "link": "https://link.coupang.com/a/example54",
     "desc": "기름기 없이 구워 감자 본연의 담백한 맛과 바삭바삭한 식감을 극대화한 감자칩!",
     "defaultVotes": 900
