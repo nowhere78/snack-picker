@@ -4,7 +4,7 @@ const SNACK_DATA = [
     "name": "새우깡",
     "category": "snack",
     "image": "images/saewookkang.png",
-    "link": "https://link.coupang.com/a/dyI4qVhgpo",
+    "link": "https://link.coupang.com/a/dYtfwBwVQy",
     "desc": "손이 가요 손이 가~ 고소하고 짭조름한 한국인의 소울 원조 스낵!",
     "defaultVotes": 300
   },
@@ -13,7 +13,7 @@ const SNACK_DATA = [
     "name": "포카칩 오리지널",
     "category": "potato",
     "image": "images/pocachip.jpg",
-    "link": "https://link.coupang.com/a/example2",
+    "link": "https://link.coupang.com/a/dYtlyvpVzE",
     "desc": "100% 생감자로 만든 바삭함의 끝판왕 생감자칩 1위 브랜드!",
     "defaultVotes": 297
   },
@@ -22,7 +22,7 @@ const SNACK_DATA = [
     "name": "초코파이 정(情)",
     "category": "choco",
     "image": "images/chocopie.jpg",
-    "link": "https://link.coupang.com/a/example12",
+    "link": "https://link.coupang.com/a/dYtlyvpVzE",
     "desc": "말하지 않아도 알아요~ 한국 역사와 정을 대변하는 부드러운 마시멜로 파이!",
     "defaultVotes": 295
   },
@@ -31,7 +31,7 @@ const SNACK_DATA = [
     "name": "아몬드 빼빼로",
     "category": "choco",
     "image": "images/pepero.jpg",
-    "link": "https://link.coupang.com/a/example7",
+    "link": "https://link.coupang.com/a/dYtsekGcW4",
     "desc": "고소한 아몬드 토핑과 초콜릿의 조화! 빼빼로 시리즈 중 부동의 1위 인기작.",
     "defaultVotes": 292
   },
@@ -40,7 +40,7 @@ const SNACK_DATA = [
     "name": "프링글스 오리지널",
     "category": "potato",
     "image": "images/pringles.jpg",
-    "link": "https://link.coupang.com/a/example5",
+    "link": "https://link.coupang.com/a/dYtvPGrbyu",
     "desc": "한 번 열면 멈출 수 없는 짭조름하고 바삭한 세계적인 원통형 감자칩!",
     "defaultVotes": 289
   },
@@ -49,16 +49,16 @@ const SNACK_DATA = [
     "name": "꼬깔콘 고소한맛",
     "category": "snack",
     "image": "images/gogalcorn.jpg",
-    "link": "https://link.coupang.com/a/example18",
+    "link": "https://link.coupang.com/a/dYtzOwtR00",
     "desc": "손가락에 끼워 먹어야 제맛! 옥수수의 고소함이 고소하고 바삭하게 씹힙니다.",
     "defaultVotes": 286
   },
   {
     "id": "homerunball",
-    "name": "홈런볼 초코",
+    "name": "홈런볼",
     "category": "choco",
     "image": "images/homerunball.jpg",
-    "link": "https://link.coupang.com/a/example6",
+    "link": "https://link.coupang.com/a/dYtCimFhgO0",
     "desc": "입안에서 사르르 녹는 부드러운 슈 속에 달콤한 초콜릿 가득! 대한민국 과자 판매량 부동의 1위 그룹.",
     "defaultVotes": 284
   },
@@ -67,7 +67,7 @@ const SNACK_DATA = [
     "name": "오징어땅콩",
     "category": "snack",
     "image": "images/squidpeanut.png",
-    "link": "https://link.coupang.com/a/example17",
+    "link": "https://link.coupang.com/a/dYtIatbrNI",
     "desc": "바삭한 오징어 맛 볼 속에 고소한 진짜 땅콩! 맥주 안주로 손꼽히는 정통 스낵.",
     "defaultVotes": 281
   },
@@ -76,7 +76,7 @@ const SNACK_DATA = [
     "name": "꼬북칩 초코츄러스",
     "category": "snack",
     "image": "images/gobukchip.png",
-    "link": "https://link.coupang.com/a/example3",
+    "link": "https://link.coupang.com/a/dYtJTH9qCW",
     "desc": "네 겹의 극강 바삭함 속에 진한 초코츄러스 시나몬 맛이 듬뿍!",
     "defaultVotes": 278
   },
@@ -85,7 +85,7 @@ const SNACK_DATA = [
     "name": "다이제 초코",
     "category": "biscuit",
     "image": "images/diget.jpg",
-    "link": "https://link.coupang.com/a/example14",
+    "link": "https://link.coupang.com/a/dYtMOtd6aa",
     "desc": "통밀 비스킷의 든든한 고소함 위에 듬뿍 얹어진 진한 초콜릿 코팅!",
     "defaultVotes": 275
   },
