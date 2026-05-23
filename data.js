@@ -579,7 +579,7 @@ const SNACK_DATA = [
     "id": "potetochip",
     "name": "포테토칩",
     "category": "potato",
-    "image": "images/potetochip_new.png",
+    "image": "images/potetochip_original.png",
     "link": "https://link.coupang.com/a/example52",
     "desc": "오리지널 생감자 본연의 은은한 고소함과 담백 바삭함을 지켜온 장수 감자칩!",
     "defaultVotes": 125
@@ -613,11 +613,11 @@ const SNACK_DATA = [
   },
   {
     "id": "gobukchip_vanilla",
-    "name": "꼬북칩 바닐라",
+    "name": "꼬북칩",
     "category": "snack",
-    "image": "images/gobukchip_vanilla_new.png",
+    "image": "images/gobukchip_original.png",
     "link": "https://link.coupang.com/a/example59",
-    "desc": "꼬북칩 4겹 레이어에 바닐라 크림을 코팅하여 부드럽고 깊은 바닐라 향 가득!",
+    "desc": "네 겹의 극강 바삭함 속에 고소한 콘스프 풍미가 입안 가득 퍼지는 원조 꼬북칩!",
     "defaultVotes": 114
   },
   {
@@ -651,7 +651,7 @@ const SNACK_DATA = [
     "id": "yegam_cheese",
     "name": "예감 치즈그라탕맛",
     "category": "potato",
-    "image": "images/yegam_cheese_new.png",
+    "image": "images/yegam_cheese_gratin.png",
     "link": "https://link.coupang.com/a/example54",
     "desc": "기름에 튀기지 않고 오븐에 구워 담백하고 짭조름한 치즈그라탕 맛 예감!",
     "defaultVotes": 103
