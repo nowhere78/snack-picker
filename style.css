@@ -535,17 +535,17 @@ body {
 }
 
 .rank-row-num {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--text-dim);
-  width: 22px;
+  width: 26px;
   text-align: center;
 }
 
 .rank-row-img-wrapper {
-  width: 42px;
-  height: 42px;
-  border-radius: 8px;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
   overflow: hidden;
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--panel-border);
@@ -562,26 +562,28 @@ body {
 }
 
 .rank-row-fallback-icon {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: var(--text-dim);
 }
 
 .rank-row-info {
   display: flex;
   flex-direction: column;
+  gap: 4px;
   min-width: 0;
 }
 
 .rank-row-name {
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .rank-row-votes {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
@@ -1174,6 +1176,20 @@ body {
   
   .rank-row-item {
     padding: 8px;
+  }
+  
+  .rank-row-img-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  
+  .rank-row-fallback-icon {
+    font-size: 1.5rem;
+  }
+  
+  .rank-row-name {
+    font-size: 0.95rem;
   }
   
   /* Catalog & filters mobile */
