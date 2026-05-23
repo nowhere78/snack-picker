@@ -70,11 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const isAlreadyVoted = userVotes[snackId] && userVotes[snackId] > 0;
     
     if (isAlreadyVoted) {
-      showToast(`"${snack.name}" 과자는 이미 체크하셨습니다! 최저가 확인 페이지로 이동합니다. 🍪`, 'fa-solid fa-circle-info');
+      showToast(`"${snack.name}" 최저가 확인 페이지로 이동합니다! 🛒`, 'fa-solid fa-cart-shopping');
       // Immediately open link
-      setTimeout(() => {
-        window.open(snack.link, '_blank');
-      }, 500);
+      window.open(snack.link, '_blank');
       return;
     }
     
@@ -101,12 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, 50);
     
-    showToast(`"${snack.name}" 체크 완료! 최저가 확인 페이지로 이동합니다. 🔥`);
-    
-    // Open Coupang link in a new tab
-    setTimeout(() => {
-      window.open(snack.link, '_blank');
-    }, 800);
+    showToast(`"${snack.name}" 투표 완료! (한 번 더 누르시면 최저가로 이동합니다) 🗳️`, 'fa-solid fa-square-check');
   }
 
   function registerClick(snackId) {
