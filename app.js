@@ -70,11 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const isAlreadyVoted = userVotes[snackId] && userVotes[snackId] > 0;
     
     if (isAlreadyVoted) {
-      showToast(`"${snack.name}" 최저가 확인 페이지로 이동합니다! 🛒`, 'fa-solid fa-cart-shopping');
+      showToast(`"${snack.name}" 쿠팡 & 구매 페이지로 이동합니다! 🛒`, 'fa-solid fa-cart-shopping');
       // Immediately open link
       window.open(snack.link, '_blank');
       return;
     }
+    
+    // Count how many unique snacks have already been voted
+    const prevVotedCount = Object.keys(userVotes).length;
     
     userVotes[snackId] = 1;
     clickStats[snackId] = (clickStats[snackId] || 0) + 1;
@@ -99,7 +102,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, 50);
     
-    showToast(`"${snack.name}" 투표 완료! (한 번 더 누르시면 최저가로 이동합니다) 🗳️`, 'fa-solid fa-square-check');
+    if (prevVotedCount === 0) {
+      // First unique snack: vote only, no redirect
+      showToast(`"${snack.name}" 투표 완료! (한 번 더 누르시면 쿠팡으로 이동합니다) 🗳️`, 'fa-solid fa-square-check');
+    } else {
+      // Second or subsequent unique snack: vote and redirect to Coupang link
+      showToast(`"${snack.name}" 투표 완료! 쿠팡 & 구매 페이지로 이동합니다. 🛒`, 'fa-solid fa-cart-shopping');
+      setTimeout(() => {
+        window.open(snack.link, '_blank');
+      }, 800);
+    }
   }
 
   function registerClick(snackId) {
