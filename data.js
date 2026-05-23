@@ -559,11 +559,11 @@ const SNACK_DATA = [
   },
   {
     "id": "jjanggu_choco",
-    "name": "못말리는 신짱",
+    "name": "초코팅촉",
     "category": "choco",
-    "image": "images/shin_jjang.png",
-    "link": "https://link.coupang.com/a/dYwnFnIcGy",
-    "desc": "달콤 쌉싸름한 코코아 분말을 둘러 한 단계 더 디저트스러워진 짱구의 진화!",
+    "image": "images/choco_tingchoc.png",
+    "link": "https://link.coupang.com/a/dYxCfzwnDg",
+    "desc": "신세대 감각의 새로운 초코스낵! 입안에서 부드럽게 사르르 녹는 달콤한 초코콘.",
     "defaultVotes": 130
   },
   {
