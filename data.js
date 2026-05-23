@@ -664,6 +664,15 @@ const SNACK_DATA = [
     "link": "https://link.coupang.com/a/dYwWgREsOi",
     "desc": "귀여운 콜라병 디자인 속에 상큼하고 쫄깃쫄깃한 탄산 콜라 향이 가득!",
     "defaultVotes": 100
+  },
+  {
+    "id": "shin_jjang",
+    "name": "못말리는 신짱",
+    "category": "snack",
+    "image": "images/shin_jjang.png",
+    "link": "https://link.coupang.com/a/dYxVj6ZsFo",
+    "desc": "달콤한 아카시아 벌꿀과 고소한 검은참깨가 솔솔 뿌려진 바삭바삭 오리지널 짱구 스낵!",
+    "defaultVotes": 128
   }
 ];
 
