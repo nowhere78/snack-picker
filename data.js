@@ -253,10 +253,10 @@ const SNACK_DATA = [
   },
   {
     "id": "pringles_onion",
-    "name": "프링글스 사워크림 앤 어니언",
+    "name": "프링글스 양파맛",
     "category": "potato",
     "image": "images/pringles_sourcream.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvkBNAzsa",
     "desc": "새콤한 사워크림과 달콤 짭짤한 어니언 시즈닝이 칩마다 가득 밴 인기 맛!",
     "defaultVotes": 223
   },
@@ -265,7 +265,7 @@ const SNACK_DATA = [
     "name": "오리온 스윙칩 볶음고추장맛",
     "category": "potato",
     "image": "images/swingchip_hot.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvnkVXHJA",
     "desc": "두껍고 큼직한 굴곡 감자칩 사이에 한국인 취향 저격 매콤한 고추장 시즈닝!",
     "defaultVotes": 221
   },
@@ -274,7 +274,7 @@ const SNACK_DATA = [
     "name": "치토스 매콤한 맛",
     "category": "snack",
     "image": "images/cheetos_spicy.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvpazlOGO",
     "desc": "매콤하고 자극적인 양념과 크런치한 옥수수 식감으로 언제나 손이 가는 스낵!",
     "defaultVotes": 218
   },
@@ -283,7 +283,7 @@ const SNACK_DATA = [
     "name": "눈을 감자",
     "category": "potato",
     "image": "images/nunegamja_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvqbOX0yi",
     "desc": "통감자를 거칠게 썰어 오독오독하고 짭조름하게 씹는 재미를 살린 감자과자!",
     "defaultVotes": 215
   },
@@ -292,7 +292,7 @@ const SNACK_DATA = [
     "name": "태양의 맛 썬",
     "category": "snack",
     "image": "images/sunchip_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvrxPnIf6",
     "desc": "통곡물의 거친 바삭함 속에 배어 나오는 화끈하고 매콤달콤한 태양의 맛!",
     "defaultVotes": 212
   },
@@ -301,7 +301,7 @@ const SNACK_DATA = [
     "name": "하리보 골드베렌",
     "category": "jelly",
     "image": "images/haribo.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvs0omPsa",
     "desc": "100년 전통의 쫀득말랑한 과일 맛 곰돌이 젤리! 전 세계 베스트셀러.",
     "defaultVotes": 210
   },
@@ -310,7 +310,7 @@ const SNACK_DATA = [
     "name": "버터와플",
     "category": "biscuit",
     "image": "images/butterwaffle.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvuUxbbW0",
     "desc": "고소한 버터의 진한 풍미가 얇고 바삭한 와플 모양 속에 사르르 녹아든 비스킷!",
     "defaultVotes": 207
   },
@@ -319,7 +319,7 @@ const SNACK_DATA = [
     "name": "마가렛트",
     "category": "biscuit",
     "image": "images/margaret_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvvYnXNo4",
     "desc": "부드럽고 촉촉한 쿠키 빵 속에 땅콩 크림이 고소하게 채워진 소프트 쿠키!",
     "defaultVotes": 204
   },
@@ -328,7 +328,7 @@ const SNACK_DATA = [
     "name": "초코송이",
     "category": "choco",
     "image": "images/chocosongi_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvxzuGGDA",
     "desc": "귀여운 머쉬룸 모양 비스킷 머리에 달콤한 밀크 초콜릿 모자를 얹은 과자!",
     "defaultVotes": 201
   },
@@ -337,7 +337,7 @@ const SNACK_DATA = [
     "name": "알새우칩",
     "category": "snack",
     "image": "images/shrimpchip_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvyvKPPoG",
     "desc": "입안 가득 차오르는 파삭함, 생새우 향이 입안에 퍼져 안주나 간식으로 최고!",
     "defaultVotes": 199
   },
@@ -346,7 +346,7 @@ const SNACK_DATA = [
     "name": "콘치 크림치즈",
     "category": "biscuit",
     "image": "images/conchi_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvCseRcpU",
     "desc": "바삭한 옥수수 콘 칩 위에 부드럽고 짭조름한 덴마크산 고소한 크림치즈 퐁듀!",
     "defaultVotes": 196
   },
@@ -355,7 +355,7 @@ const SNACK_DATA = [
     "name": "마이구미 복숭아",
     "category": "jelly",
     "image": "images/mygumi_peach.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvD2zJnfE",
     "desc": "리얼 복숭아 과즙의 과일 향과 쫄깃하고 달콤한 하트 젤리의 사랑스러운 맛!",
     "defaultVotes": 193
   },
@@ -364,7 +364,7 @@ const SNACK_DATA = [
     "name": "예감 오리지널",
     "category": "potato",
     "image": "images/yegam_plain_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvFWWsB9E",
     "desc": "기름기 없이 구워 감자 본연의 담백한 맛과 바삭바삭한 식감을 극대화한 감자칩!",
     "defaultVotes": 190
   },
@@ -373,7 +373,7 @@ const SNACK_DATA = [
     "name": "카스타드",
     "category": "choco",
     "image": "images/custard.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvHvh8Sxo",
     "desc": "계란을 듬뿍 넣어 촉촉하고 부드러운 빵 속에 커스타드 크림이 듬뿍!",
     "defaultVotes": 188
   },
@@ -382,7 +382,7 @@ const SNACK_DATA = [
     "name": "쿠쿠다스 화이트",
     "category": "biscuit",
     "image": "images/couque_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvIM5h7ZI",
     "desc": "입에 대자마자 눈처럼 녹아내리는 부드러움의 정수! 멜랑슈 크림 쿠키.",
     "defaultVotes": 185
   },
@@ -391,7 +391,7 @@ const SNACK_DATA = [
     "name": "참크래커",
     "category": "biscuit",
     "image": "images/chamcracker_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvKwPtr52",
     "desc": "가벼운 담백 짭조름한 크래커의 정석. 잼이나 크림치즈를 발라 먹기 최고!",
     "defaultVotes": 182
   },
@@ -400,7 +400,7 @@ const SNACK_DATA = [
     "name": "고구마깡",
     "category": "snack",
     "image": "images/sweetpotatokkang_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvLHMnSF2",
     "desc": "고소한 검은깨와 은은하고 진한 고구마 맛이 결합된 오독오독 스낵!",
     "defaultVotes": 179
   },
@@ -409,7 +409,7 @@ const SNACK_DATA = [
     "name": "오사쯔 고구마",
     "category": "snack",
     "image": "images/osatsu_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvM0nCyDQ",
     "desc": "국산 고구마 페이스트와 식이섬유가 든 입안에서 녹아내리는 웰빙 고구마 스낵!",
     "defaultVotes": 177
   },
@@ -418,7 +418,7 @@ const SNACK_DATA = [
     "name": "칸쵸 초코",
     "category": "choco",
     "image": "images/kancho_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvOQg1aqO",
     "desc": "동글동글 귀여운 바삭 비스킷 속에 부드럽고 달콤한 가나 초콜릿이 쏙!",
     "defaultVotes": 174
   },
@@ -427,7 +427,7 @@ const SNACK_DATA = [
     "name": "아이비",
     "category": "biscuit",
     "image": "images/ivy_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvP7m3AvA",
     "desc": "순수하고 담백한 발효 크래커. 카나페 파티나 깔끔한 티타임에 어울려요.",
     "defaultVotes": 171
   },
@@ -436,7 +436,7 @@ const SNACK_DATA = [
     "name": "야채타임",
     "category": "snack",
     "image": "images/vegtime_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvQ9T3v6O",
     "desc": "상큼한 야채맛 스낵 속에 담긴 새콤한 토마토 케첩 디핑 소스 찍먹 꿀잼!",
     "defaultVotes": 168
   },
@@ -445,7 +445,7 @@ const SNACK_DATA = [
     "name": "감자깡",
     "category": "snack",
     "image": "images/potatokkang_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvR9FNu3g",
     "desc": "농심의 깡 시리즈 중 하나! 짭조름한 바베큐 시즈닝 맛 감자스틱.",
     "defaultVotes": 166
   },
@@ -454,16 +454,16 @@ const SNACK_DATA = [
     "name": "꽃게랑",
     "category": "snack",
     "image": "images/crabchip.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvThwxuzA",
     "desc": "꽃게 모양으로 구워내 담백 고소하고 와사비/해물 특유의 짭짤함을 담은 스낵!",
     "defaultVotes": 163
   },
   {
     "id": "jagalchi",
-    "name": "자갈치 문어",
+    "name": "자잘치",
     "category": "snack",
     "image": "images/jagalchi_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvU12pqwK",
     "desc": "귀여운 꼬마 문어 디자인 속에 바삭 짭짤한 문어 구이 맛 시즈닝이 가득!",
     "defaultVotes": 160
   },
@@ -472,7 +472,7 @@ const SNACK_DATA = [
     "name": "양파깡",
     "category": "snack",
     "image": "images/onionkkang_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvWZ6u5yS",
     "desc": "양파의 은은하고 달큰한 감칠맛을 바삭한 링 스낵으로 재해석한 과자!",
     "defaultVotes": 158
   },
@@ -481,7 +481,7 @@ const SNACK_DATA = [
     "name": "스윙칩 간장치킨",
     "category": "potato",
     "image": "images/swingchip_chicken_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYvYNz11HM",
     "desc": "단짠단짠의 대명사 간장치킨 특제 소스를 뿌려 맥주를 부르는 웨이브 감자칩!",
     "defaultVotes": 155
   },
@@ -490,7 +490,7 @@ const SNACK_DATA = [
     "name": "벌집피자",
     "category": "snack",
     "image": "images/beehivepizza_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYv1Glxmq4",
     "desc": "벌집 모양 그리드 틈으로 피자 소스 맛 시즈닝이 부드럽고 강하게 스며든 스낵!",
     "defaultVotes": 152
   },
@@ -499,7 +499,7 @@ const SNACK_DATA = [
     "name": "꼬깔콘 군옥수수",
     "category": "snack",
     "image": "images/gogalcorn_corn.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYv3LveRA4",
     "desc": "더욱 깊고 짭짤하게 볶아낸 군옥수수 풍미의 중독성 최강자 꼬깔콘!",
     "defaultVotes": 149
   },
@@ -508,7 +508,7 @@ const SNACK_DATA = [
     "name": "썬칩 갈릭바게트",
     "category": "snack",
     "image": "images/sunchip_garlic_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYv5GlyFlQ",
     "desc": "바삭하고 거친 통곡물 칩 위에 고소하고 달달한 갈릭 바게트 마늘 버터 맛 가득!",
     "defaultVotes": 147
   },
@@ -517,16 +517,16 @@ const SNACK_DATA = [
     "name": "도도한 나쵸 치즈",
     "category": "snack",
     "image": "images/nacho_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYv8EXDApo",
     "desc": "오븐에 구워 기름기를 빼고 더욱 진하고 풍부한 체다 치즈 가루를 입힌 나초 칩!",
     "defaultVotes": 144
   },
   {
     "id": "concho",
-    "name": "콘초 헤이즐넛초코",
+    "name": "크라운 콘초가나슈",
     "category": "choco",
     "image": "images/concho_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwaeGQWaq",
     "desc": "바삭바삭 옥수수 콘스낵 바닥에 초콜릿 퐁듀를 입힌 환상의 단짠 조합!",
     "defaultVotes": 141
   },
@@ -535,43 +535,43 @@ const SNACK_DATA = [
     "name": "카라멜 메이플콘",
     "category": "snack",
     "image": "images/maplecorn.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwfnn71Fs",
     "desc": "향긋하고 은은한 캐나다산 리얼 메이플 시럽 코팅으로 달콤바삭한 콘 스낵!",
     "defaultVotes": 138
   },
   {
     "id": "chocheong",
-    "name": "조청유과 쌀",
+    "name": "농심 조총유과",
     "category": "snack",
     "image": "images/chocheong_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwgrJZWMu",
     "desc": "가마솥에서 끓인 전통 조청으로 쌀 과자의 겉면을 코팅해 한층 깊은 달콤고소함!",
     "defaultVotes": 136
   },
   {
     "id": "indianbab",
-    "name": "인디안밥 콘",
+    "name": "인디안 밥",
     "category": "snack",
     "image": "images/indianbab_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwiXjjCEK",
     "desc": "바삭하고 담백한 고소 옥수수 플레이크 스낵. 우유 시리얼 대용으로도 인기!",
     "defaultVotes": 133
   },
   {
     "id": "jjanggu_choco",
-    "name": "초코 신짱",
+    "name": "못말리는 신짱",
     "category": "choco",
-    "image": "images/jjanggu_choco_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "image": "images/shin_jjang.png",
+    "link": "https://link.coupang.com/a/dYwnFnIcGy",
     "desc": "달콤 쌉싸름한 코코아 분말을 둘러 한 단계 더 디저트스러워진 짱구의 진화!",
     "defaultVotes": 130
   },
   {
     "id": "oguma",
-    "name": "오구마 고구마",
+    "name": "무뚝뚝 고구마",
     "category": "snack",
-    "image": "images/oguma_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "image": "images/mutukk_goguma.png",
+    "link": "https://link.coupang.com/a/dYwtD1cFDE",
     "desc": "바삭바삭 네 겹의 식감 위에 깊은 군고구마 풍미와 꿀 코팅으로 중독성을 높인 과자!",
     "defaultVotes": 127
   },
@@ -580,16 +580,16 @@ const SNACK_DATA = [
     "name": "포테토칩",
     "category": "potato",
     "image": "images/potetochip_original.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwzelUntY",
     "desc": "오리지널 생감자 본연의 은은한 고소함과 담백 바삭함을 지켜온 장수 감자칩!",
     "defaultVotes": 125
   },
   {
     "id": "bakedpotato",
-    "name": "구운감자 석쇠",
+    "name": "구운감자",
     "category": "potato",
     "image": "images/bakedpotato_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwA8sEfSv",
     "desc": "기름 없이 구워 담백하고 단단한 오독 식감을 자랑하는 원통형 감자 스틱!",
     "defaultVotes": 122
   },
@@ -598,7 +598,7 @@ const SNACK_DATA = [
     "name": "초코칩 쿠키",
     "category": "biscuit",
     "image": "images/chocochip_cookie_original.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwC3TTsrs",
     "desc": "고소한 쿠키 반죽 속에 초코칩이 아기자기하게 들어있어 깔끔하게 조화를 이루는 비스킷!",
     "defaultVotes": 119
   },
@@ -607,7 +607,7 @@ const SNACK_DATA = [
     "name": "빠새 쉬림프",
     "category": "snack",
     "image": "images/bbasae_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwESxVBkW",
     "desc": "얇고 파삭파삭한 식감 속에 생새우의 짭조름한 감칠맛이 입안 가득 감도는 과자!",
     "defaultVotes": 116
   },
@@ -616,16 +616,16 @@ const SNACK_DATA = [
     "name": "꼬북칩",
     "category": "snack",
     "image": "images/gobukchip_original.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwGho3UuP",
     "desc": "네 겹의 극강 바삭함 속에 고소한 콘스프 풍미가 입안 가득 퍼지는 원조 꼬북칩!",
     "defaultVotes": 114
   },
   {
     "id": "diget_thin",
-    "name": "다이제 씬 통밀",
+    "name": "다이제 씬",
     "category": "biscuit",
     "image": "images/diget_thin_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwNKJIJ2a",
     "desc": "기존 다이제보다 훨씬 가볍고 부드러워져 모닝커피에 곁들이기 좋은 통밀 크래커!",
     "defaultVotes": 111
   },
@@ -634,7 +634,7 @@ const SNACK_DATA = [
     "name": "마가렛트 구운모카",
     "category": "biscuit",
     "image": "images/margaret_choco_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwPLTLZ9M",
     "desc": "커피 크림의 모카 풍미와 초코칩의 조화로 촉촉하게 구워낸 고급 소프트 쿠키!",
     "defaultVotes": 108
   },
@@ -643,7 +643,7 @@ const SNACK_DATA = [
     "name": "빈츠 카페모카",
     "category": "choco",
     "image": "images/binch_rye_new.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwTdHTDuS",
     "desc": "진한 에스프레소 커피 향 초콜릿을 올려 티타임의 동반자로 거듭난 빈츠 시리즈!",
     "defaultVotes": 105
   },
@@ -652,7 +652,7 @@ const SNACK_DATA = [
     "name": "예감 치즈그라탕맛",
     "category": "potato",
     "image": "images/yegam_cheese_gratin.png",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwWgREsOi",
     "desc": "기름에 튀기지 않고 오븐에 구워 담백하고 짭조름한 치즈그라탕 맛 예감!",
     "defaultVotes": 103
   },
@@ -661,7 +661,7 @@ const SNACK_DATA = [
     "name": "하리보 해피콜라",
     "category": "jelly",
     "image": "images/haribo_cola.jpg",
-    "link": "https://link.coupang.com/a/dYt2P5DKma",
+    "link": "https://link.coupang.com/a/dYwWgREsOi",
     "desc": "귀여운 콜라병 디자인 속에 상큼하고 쫄깃쫄깃한 탄산 콜라 향이 가득!",
     "defaultVotes": 100
   }
