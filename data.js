@@ -94,7 +94,7 @@ const SNACK_DATA = [
     "name": "빈츠",
     "category": "choco",
     "image": "images/binch.png",
-    "link": "https://link.coupang.com/a/example8",
+    "link": "https://link.coupang.com/a/dYtS8HsFLo",
     "desc": "한쪽은 바삭한 유럽풍 비스킷, 한쪽은 부드러운 초콜릿의 황홀한 콤비네이션!",
     "defaultVotes": 273
   },
@@ -103,7 +103,7 @@ const SNACK_DATA = [
     "name": "허니버터칩",
     "category": "potato",
     "image": "images/honeybutter.png",
-    "link": "https://link.coupang.com/a/example4",
+    "link": "https://link.coupang.com/a/dYtU8cXrJQ",
     "desc": "달콤한 아카시아 꿀과 고소한 고메 버터의 조화로 품절 대란을 일으켰던 감자칩!",
     "defaultVotes": 270
   },
