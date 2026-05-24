@@ -617,7 +617,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 5. Request Snack Modal & Formspree Integration ---
-  const floatingReqBtn = document.getElementById('floating-req-btn');
+  const bottomReqBtn = document.getElementById('bottom-request-btn');
   const searchRequestBtn = document.getElementById('search-request-btn');
   const requestModal = document.getElementById('request-modal');
   const requestModalCloseBtn = document.getElementById('request-modal-close-btn');
@@ -627,8 +627,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const FORMSPREE_FORM_ID = 'YOUR_FORMSPREE_ID_HERE'; 
 
   if (requestModal && requestModalCloseBtn) {
-    if (floatingReqBtn) {
-      floatingReqBtn.addEventListener('click', () => {
+    if (bottomReqBtn) {
+      bottomReqBtn.addEventListener('click', () => {
         requestModal.classList.add('active');
         document.body.style.overflow = 'hidden';
       });

@@ -65,6 +65,12 @@
             <i class="fa-solid fa-rotate-right"></i> 룰렛 돌리기
           </button>
         </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="document.getElementById('ranking-section').scrollIntoView({behavior: 'smooth'})">
+          <span style="display:block; margin-bottom: 8px; font-size: 0.9rem; color: var(--text-dim);">👇 인기 과자 랭킹 보기 👇</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
       </div>
     </section>
 
@@ -137,6 +143,14 @@
           <i class="fa-solid fa-plus"></i> 과자 추가하기 요청
         </button>
       </div>
+
+      <!-- New Request Block at the bottom of the catalog -->
+      <div class="snack-request-block glass-panel" id="bottom-request-btn">
+        <i class="fa-solid fa-box-open text-primary" style="font-size: 3rem; margin-bottom: 15px;"></i>
+        <h3 style="margin-bottom: 10px;">찾으시는 과자가 없나요?</h3>
+        <p style="color: var(--text-dim); margin-bottom: 20px;">여기를 눌러 원하는 과자를 직접 신청해 보세요!</p>
+        <button class="btn btn-outline"><i class="fa-solid fa-cookie-bite"></i> 과자 신청하기</button>
+      </div>
     </section>
 
   </main>
@@ -188,12 +202,6 @@
 
   <!-- Toast Container for Notifications -->
   <div class="toast-container" id="toast-container"></div>
-
-  <!-- Floating Request Button -->
-  <button class="floating-req-btn" id="floating-req-btn">
-    <i class="fa-solid fa-cookie-bite"></i>
-    <span>과자 신청</span>
-  </button>
 
   <!-- 6. Request Snack Modal -->
   <div class="modal-overlay" id="request-modal">
