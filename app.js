@@ -581,23 +581,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const winnerIndex = Math.floor(Math.random() * numSlices);
     const sliceAngle = 360 / numSlices;
     
-    // Base 5 full spins (1800deg) + offset to align winning slice under the top pointer (which is at -90deg/270deg)
+    // Base 8 full spins (2880deg) + offset to align winning slice under the top pointer (which is at -90deg/270deg)
     // Pointer is at the top (270 degrees in canvas space).
     // Canvas draw starts at 0 degree (east/right).
     // To align winner slice at top:
     // winner slice center angle = (winnerIndex + 0.5) * sliceAngle.
     // We need to rotate the wheel by: 270 - (winnerIndex + 0.5) * sliceAngle.
-    const targetDegrees = 1800 + (270 - (winnerIndex + 0.5) * sliceAngle);
+    const targetDegrees = 2880 + (270 - (winnerIndex + 0.5) * sliceAngle);
     
     // Apply spin rotation transition
-    rouletteWheel.style.transition = 'transform 5s cubic-bezier(0.1, 0.8, 0.1, 1)';
+    rouletteWheel.style.transition = 'transform 6s cubic-bezier(0.1, 0.8, 0.1, 1)';
     rouletteWheel.style.transform = `rotate(${targetDegrees}deg)`;
     
     // Play subtle audio click or add visual pulse if desired
     rouletteWheel.classList.add('spinning');
     
     setTimeout(() => {
-      // End of spin cycle
       isSpinning = false;
       btnSpin.disabled = false;
       rouletteWheel.classList.remove('spinning');
@@ -614,7 +613,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rouletteWheel.style.transform = `rotate(${finalRotation}deg)`;
       }, 500);
       
-    }, 5000);
+    }, 6000);
   }
 
   // --- 5. Request Snack Modal & Formspree Integration ---
@@ -710,5 +709,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+  }
+
+  // Register Service Worker for PWA
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch(error => {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    });
   }
 });
