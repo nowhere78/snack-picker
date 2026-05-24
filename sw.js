@@ -1,4 +1,4 @@
-const CACHE_NAME = 'snack-picker-v2';
+const CACHE_NAME = 'snack-picker-v3';
 const urlsToCache = [
   './',
   './index.html',
@@ -10,29 +10,13 @@ const urlsToCache = [
 ];
 
 self.addEventListener('install', event => {
+  self.skipWaiting(); // Force update immediately
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
         console.log('Opened cache');
         return cache.addAll(urlsToCache);
       })
-  );
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-        return fetch(event.request).catch(() => {
-          // Fallback if offline and resource not cached
-          console.log('Fetch failed; returning offline page instead.');
-        });
-      }
-    )
   );
 });
 
@@ -47,6 +31,17 @@ self.addEventListener('activate', event => {
           }
         })
       );
+    }).then(() => self.clients.claim())
+  );
+});
+
+// Network First, fallback to cache
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    fetch(event.request).catch(() => {
+      return caches.match(event.request);
     })
   );
 });
+
+
