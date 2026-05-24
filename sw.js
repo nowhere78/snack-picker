@@ -1,4 +1,4 @@
-const CACHE_NAME = 'snack-picker-v1';
+const CACHE_NAME = 'snack-picker-v2';
 const urlsToCache = [
   './',
   './index.html',
