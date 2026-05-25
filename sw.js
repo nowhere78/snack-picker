@@ -1,10 +1,11 @@
-const CACHE_NAME = 'snack-picker-v3';
+const CACHE_NAME = 'snack-picker-v4';
 const urlsToCache = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './data.js',
+  './manifest.json',
   './images/icon-192.png',
   './images/icon-512.png'
 ];
@@ -43,5 +44,3 @@ self.addEventListener('fetch', event => {
     })
   );
 });
-
-
