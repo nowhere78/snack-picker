@@ -1593,3 +1593,19 @@ body {
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
 }
 .floating-req-btn { display: none !important; }
+
+/* --- TOP AD BANNER --- */
+.top-ad-banner {
+  text-align: center;
+  padding: 10px 15px;
+  background: rgba(6, 4, 12, 0.95);
+  border-bottom: 1px solid var(--panel-border);
+  position: relative;
+  z-index: 200;
+}
+
+.top-ad-banner .disclaimer {
+  margin: 0 auto;
+  border-radius: 6px;
+  max-width: fit-content;
+}
