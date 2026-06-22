@@ -1594,18 +1594,18 @@ body {
 }
 .floating-req-btn { display: none !important; }
 
-/* --- TOP AD BANNER --- */
-.top-ad-banner {
-  text-align: center;
-  padding: 10px 15px;
-  background: rgba(6, 4, 12, 0.95);
-  border-bottom: 1px solid var(--panel-border);
-  position: relative;
-  z-index: 200;
+/* --- HEADER DISCLAIMER --- */
+.header-disclaimer {
+  margin: 0;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  white-space: nowrap;
 }
 
-.top-ad-banner .disclaimer {
-  margin: 0 auto;
-  border-radius: 6px;
-  max-width: fit-content;
+@media (max-width: 992px) {
+  .header-disclaimer {
+    display: none; /* Hide on smaller screens to prevent header overflow */
+  }
 }
