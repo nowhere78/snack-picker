@@ -1033,9 +1033,10 @@ body {
 }
 
 .modal-disclaimer {
-  font-size: 0.7rem;
-  color: var(--text-dim);
+  font-size: 0.85rem;
+  color: #ff4444;
   text-align: center;
+  font-weight: 500;
 }
 
 /* --- FOOTER STYLING --- */
@@ -1049,7 +1050,7 @@ body {
 
 .disclaimer {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #ff4444;
   max-width: 600px;
   margin: 0 auto 12px auto;
   line-height: 1.6;
@@ -1058,8 +1059,8 @@ body {
   justify-content: center;
   gap: 6px;
   padding: 8px 16px;
-  background: rgba(245, 158, 11, 0.05);
-  border: 1px solid rgba(245, 158, 11, 0.15);
+  background: rgba(255, 68, 68, 0.05);
+  border: 1px solid rgba(255, 68, 68, 0.2);
   border-radius: 10px;
 }
 
@@ -1599,8 +1600,9 @@ body {
   margin: 0;
   padding: 4px 12px;
   font-size: 0.85rem;
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: #ff4444;
+  background: rgba(255, 68, 68, 0.08);
+  border: 1px solid rgba(255, 68, 68, 0.2);
   white-space: nowrap;
 }
 
